@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="header container">
+		<div class="page-header">
+			<h1><a href="">首页</a><small>发表评论</small></h1>
+		</div>
+	</div>
+	<div class="comments container">
+		<form action="/pinglun" method="get">
+			<div class="form-group">
+				<label for="input_name">你的名字</label>
+				<input type="text" class="form-control" required minlength="2" maxlength="10" id="input_name" name="name" placeholder="请输入您的姓名">
+			</div>
+			<div class="form-group">
+				<label for="input_name">留言内容</label>
+				<textarea type="text" class="form-control" id="input_name" name="message" cols="30" rows="10" required minlength="5" maxlength="20"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">发表</button>
+		</form>
+	</div>
+</body>
+</html>
